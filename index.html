@@ -10,18 +10,18 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --bg: #0e0f13;
-    --surface: #16181f;
-    --surface2: #1e2029;
-    --border: rgba(255,255,255,0.06);
-    --text-primary: #f0f0ef;
-    --text-muted: #7a7c85;
-    --accent-teal: #2dd4a0;
-    --accent-purple: #a78bfa;
-    --accent-blue: #60a5fa;
-    --accent-coral: #fb7c6a;
-    --accent-amber: #fbbf24;
-    --accent-gray: #9ca3af;
+    --bg: #f5f5f3;
+    --surface: #ffffff;
+    --surface2: #f0f0ee;
+    --border: rgba(0,0,0,0.08);
+    --text-primary: #1a1a1a;
+    --text-muted: #888890;
+    --accent-teal: #0d9e72;
+    --accent-purple: #7c5cda;
+    --accent-blue: #2e7dd1;
+    --accent-coral: #e05a3a;
+    --accent-amber: #d09010;
+    --accent-gray: #8a8e99;
     --radius: 16px;
   }
 
@@ -384,24 +384,24 @@
 </div>
 
 <script>
-const muted = '#7a7c85';
-const grid = 'rgba(255,255,255,0.05)';
-const teal = '#2dd4a0';
-const purple = '#a78bfa';
-const blue = '#60a5fa';
-const coral = '#fb7c6a';
-const amber = '#fbbf24';
-const gray = '#9ca3af';
-const white = '#f0f0ef';
+const muted = '#888890';
+const grid = 'rgba(0,0,0,0.06)';
+const teal = '#0d9e72';
+const purple = '#7c5cda';
+const blue = '#2e7dd1';
+const coral = '#e05a3a';
+const amber = '#d09010';
+const gray = '#8a8e99';
+const dark = '#1a1a1a';
 
 const baseOpts = (horizontal = false) => ({
   responsive: true,
   maintainAspectRatio: false,
   plugins: { legend: { display: false }, tooltip: {
-    backgroundColor: '#1e2029',
-    titleColor: white,
+    backgroundColor: '#ffffff',
+    titleColor: dark,
     bodyColor: muted,
-    borderColor: 'rgba(255,255,255,0.1)',
+    borderColor: 'rgba(0,0,0,0.1)',
     borderWidth: 1,
     padding: 10,
     titleFont: { family: "'DM Mono', monospace", size: 11 },
@@ -425,10 +425,10 @@ const donutOpts = {
   responsive: false,
   cutout: '68%',
   plugins: { legend: { display: false }, tooltip: {
-    backgroundColor: '#1e2029',
-    titleColor: white,
+    backgroundColor: '#ffffff',
+    titleColor: dark,
     bodyColor: muted,
-    borderColor: 'rgba(255,255,255,0.1)',
+    borderColor: 'rgba(0,0,0,0.1)',
     borderWidth: 1,
     padding: 10,
     titleFont: { family: "'DM Mono', monospace", size: 11 },
