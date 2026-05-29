@@ -272,23 +272,23 @@
       <canvas id="icfChart" width="140" height="140" class="donut-canvas"></canvas>
       <div class="donut-legend">
         <div class="donut-legend-item">
-          <div class="donut-legend-left"><div class="donut-legend-bar" style="background:#2dd4a0"></div>PCC</div>
+          <div class="donut-legend-left"><div class="donut-legend-bar" style="background:#0d9e72"></div>PCC</div>
           <div class="donut-legend-value">18</div>
         </div>
         <div class="donut-legend-item">
-          <div class="donut-legend-left"><div class="donut-legend-bar" style="background:#a78bfa"></div>學習中</div>
+          <div class="donut-legend-left"><div class="donut-legend-bar" style="background:#7c5cda"></div>學習中</div>
           <div class="donut-legend-value">13</div>
         </div>
         <div class="donut-legend-item">
-          <div class="donut-legend-left"><div class="donut-legend-bar" style="background:#60a5fa"></div>ACC</div>
+          <div class="donut-legend-left"><div class="donut-legend-bar" style="background:#2e7dd1"></div>ACC</div>
           <div class="donut-legend-value">8</div>
         </div>
         <div class="donut-legend-item">
-          <div class="donut-legend-left"><div class="donut-legend-bar" style="background:#9ca3af"></div>尚未起步</div>
+          <div class="donut-legend-left"><div class="donut-legend-bar" style="background:#8a8e99"></div>尚未起步</div>
           <div class="donut-legend-value">5</div>
         </div>
         <div class="donut-legend-item">
-          <div class="donut-legend-left"><div class="donut-legend-bar" style="background:#fb7c6a"></div>MCC</div>
+          <div class="donut-legend-left"><div class="donut-legend-bar" style="background:#e05a3a"></div>MCC</div>
           <div class="donut-legend-value">1</div>
         </div>
       </div>
@@ -301,15 +301,15 @@
       <canvas id="appChart" width="140" height="140" class="donut-canvas"></canvas>
       <div class="donut-legend">
         <div class="donut-legend-item">
-          <div class="donut-legend-left"><div class="donut-legend-bar" style="background:#a78bfa"></div>WeChat</div>
+          <div class="donut-legend-left"><div class="donut-legend-bar" style="background:#7c5cda"></div>WeChat</div>
           <div class="donut-legend-value">29</div>
         </div>
         <div class="donut-legend-item">
-          <div class="donut-legend-left"><div class="donut-legend-bar" style="background:#2dd4a0"></div>Line</div>
+          <div class="donut-legend-left"><div class="donut-legend-bar" style="background:#0d9e72"></div>Line</div>
           <div class="donut-legend-value">10</div>
         </div>
         <div class="donut-legend-item">
-          <div class="donut-legend-left"><div class="donut-legend-bar" style="background:#60a5fa"></div>兩者皆用</div>
+          <div class="donut-legend-left"><div class="donut-legend-bar" style="background:#2e7dd1"></div>兩者皆用</div>
           <div class="donut-legend-value">6</div>
         </div>
       </div>
@@ -322,15 +322,15 @@
       <canvas id="coachChart" width="140" height="140" class="donut-canvas"></canvas>
       <div class="donut-legend">
         <div class="donut-legend-item">
-          <div class="donut-legend-left"><div class="donut-legend-bar" style="background:#2dd4a0"></div>是的</div>
+          <div class="donut-legend-left"><div class="donut-legend-bar" style="background:#0d9e72"></div>是的</div>
           <div class="donut-legend-value">34</div>
         </div>
         <div class="donut-legend-item">
-          <div class="donut-legend-left"><div class="donut-legend-bar" style="background:#9ca3af"></div>不是</div>
+          <div class="donut-legend-left"><div class="donut-legend-bar" style="background:#8a8e99"></div>不是</div>
           <div class="donut-legend-value">9</div>
         </div>
         <div class="donut-legend-item">
-          <div class="donut-legend-left"><div class="donut-legend-bar" style="background:#fbbf24"></div>其他</div>
+          <div class="donut-legend-left"><div class="donut-legend-bar" style="background:#d09010"></div>其他</div>
           <div class="donut-legend-value">2</div>
         </div>
       </div>
@@ -473,7 +473,7 @@ new Chart(document.getElementById('hoursChart'), {
       backgroundColor: (ctx) => {
         const i = ctx.dataIndex;
         const alpha = 1 - (i * 0.1);
-        return `rgba(96, 165, 250, ${Math.max(alpha, 0.35)})`;
+        return `rgba(46, 125, 209, ${Math.max(alpha, 0.35)})`;
       },
       borderRadius: 4, borderSkipped: false
     }]
@@ -490,7 +490,7 @@ new Chart(document.getElementById('sourceChart'), {
       backgroundColor: (ctx) => {
         const i = ctx.dataIndex;
         const alpha = 1 - (i * 0.1);
-        return `rgba(45, 212, 160, ${Math.max(alpha, 0.3)})`;
+        return `rgba(13, 158, 114, ${Math.max(alpha, 0.3)})`;
       },
       borderRadius: 4, borderSkipped: false
     }]
@@ -505,7 +505,7 @@ new Chart(document.getElementById('volChart'), {
     labels: ['公益教練服務', '在非營利工作', '其他公益行動', '其他'],
     datasets: [{
       data: [31, 9, 8, 6],
-      backgroundColor: [purple, 'rgba(167,139,250,0.6)', 'rgba(167,139,250,0.45)', 'rgba(167,139,250,0.3)'],
+      backgroundColor: [purple, 'rgba(124,92,218,0.6)', 'rgba(124,92,218,0.45)', 'rgba(124,92,218,0.3)'],
       borderRadius: 6, borderSkipped: false
     }]
   },
@@ -518,7 +518,7 @@ new Chart(document.getElementById('courseChart'), {
     labels: ['暫無規劃', '3CCs 倫理', '應用心理學', '觀察力精進', '黃金人生'],
     datasets: [{
       data: [21, 9, 5, 5, 4],
-      backgroundColor: [gray, coral, 'rgba(251,124,106,0.7)', 'rgba(251,124,106,0.55)', 'rgba(251,124,106,0.4)'],
+      backgroundColor: [gray, coral, 'rgba(224,90,58,0.7)', 'rgba(224,90,58,0.55)', 'rgba(224,90,58,0.4)'],
       borderRadius: 6, borderSkipped: false
     }]
   },
@@ -532,7 +532,7 @@ new Chart(document.getElementById('actChart'), {
     labels: ['尚未參與', '如光公益活動', '3CCs 倫理研討', '其他', 'Group Mentor Coaching'],
     datasets: [{
       data: [18, 12, 12, 5, 3],
-      backgroundColor: [gray, teal, 'rgba(45,212,160,0.65)', 'rgba(45,212,160,0.45)', 'rgba(45,212,160,0.3)'],
+      backgroundColor: [gray, teal, 'rgba(13,158,114,0.65)', 'rgba(13,158,114,0.45)', 'rgba(13,158,114,0.3)'],
       borderRadius: 6, borderSkipped: false
     }]
   },
